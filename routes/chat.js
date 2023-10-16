@@ -15,7 +15,7 @@ router.get('/fetchallchats', async (req, res) => {
     }
 })
 
-// ROUTE 2: Add a new Chat using: POST "/api/notes/addnote"
+// ROUTE 2: Add a new Chat using: POST "/api/chats/addchat"
 router.post('/addchat', [
     body('body', 'Description must be atleast 5 characters').isLength({ min: 5 }),], async (req, res) => {
         try {
